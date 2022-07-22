@@ -37,9 +37,9 @@ public class Dev {
 
     }
 
-    public double calcularXP() {
+    public double calcularTotalXP() {
 
-        this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXP).sum();
+        return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXP).sum();
 
     }
 
